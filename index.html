@@ -9,17 +9,18 @@
             font-weight: 700;
             margin-top: 150px;
             font-weight: bold;
+            font-size: 15px;
 
         }
 
-        img.main {
+        img.hayasaka {
             border-radius: 150px;
             float: left;
-            margin-right: 35px;
-            width: 300px;
-            height: 300px;
+            margin-right: 20px;
+            width: 250px;
+            height: 250px;
         }
-
+       
         button.withImage {
             width: 100px;
             height: 100px;
@@ -36,31 +37,44 @@
             width: 100px;
         }
 
-
-
         button {
             width: 50px;
-            height: 50px;
-            background-color: yellow;
+            height: 50px
             /* ask why button is not yellow*/
         }
-    </style>
+        button.nextPage{
+            float: right; 
+            background-image: url(images/next.png);
+            ;
+
+        }
+        
+            </style>
     <title> Hayaska </title>
 </head>
 
 <body>
 
-    <img class="main" src="images/hay.jpg" alt="Sorry this images could not be loaded">
+    <img class="hayasaka" src="images/hay.jpg" alt="Sorry this images could not be loaded">
     <a href="https://tinyurl.com/4j7cz2ta">
-        <p class="link"> Click here for more </p>
+        <p class="link"> Click here for more Hayaska pictures </p>
     </a>
 
-    <a href="ThirdPage.html">
+    
+    <a href="SecondPage.html">
         <button class = "withImage">
         </button>
     </a>
-    <img class = "test" src="images/hay.jpg"> <img>
-
+    
+<a href="SecondPage.html" >
+    <button class = "nextPage">  </button>
+</a>
+    
+    <img class = "test" src="images/hay.jpg" alt="Sorry this image could not be loaded" download>
+    <a href="/images/hay.jpg" download> 
+        <button> </button>
+    </a>
+<!-- &[what you want inside here]; example: &lt; HTML &gt; -->
 </body>
 
 </html>
