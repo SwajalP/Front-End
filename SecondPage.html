@@ -6,13 +6,13 @@
         </title>
         <style>
         a.chizuruLink{
-            float: left;
+            float: center;
             color: teal;
             font-weight: 700;
-            margin-top: 150px;
+            position: absolute;
+            top: 150px;
             font-weight: bold;
-            font-size: 15px;
-
+            font-size: 15px
         }
         img.chizuru{
             border-radius: 150px;
@@ -24,6 +24,24 @@
         button {
             height: 50px;
             width: 50px;
+            cursor: pointer;
+        }
+        button.backButton{
+            background-image: url("images/backarrow.png");
+            left: 0.6%;
+            bottom: 0.7%;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            transition: .2s;
+        }
+        .backButton:hover{
+            filter: brightness(80%);
+            color: blue;
         }
         </style>
     </head>
@@ -35,7 +53,7 @@
     </body>
 
     <a href="/index.html">
-        <button> </button>
+        <button class = "backButton"> </button>
     </a>
     
 </html>
