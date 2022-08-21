@@ -41,19 +41,38 @@
         }
         .backButton:hover{
             filter: brightness(80%);
-            color: blue;
         }
+        button.nextButton{
+            background-image: url("images/forward.png");
+            right: 0.6%;
+            bottom: 0.7%;
+            border-radius: 50%;
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat; /* why does the image repeat> -- is it too small to fit once */
+            position: absolute;
+            background-position: center;
+            border: none;
+            transition: .2s;
+        }
+        .nextButton:hover{
+            filter: brightness(80%);
+        }
+
         </style>
     </head>
 
     <body>
         <img class = "chizuru" src = "images\chizuru.jpg" alt="Sorry this images could not be loaded"> 
-        <a class = "chizuruLink" href="https://tinyurl.com/42b3bxe8"> Click here for more Chizuru pictures </a>
+        <a target = "_blank" class = "chizuruLink" href="https://tinyurl.com/42b3bxe8"> Click here for more Chizuru pictures </a>
 
     </body>
 
     <a href="/index.html">
         <button class = "backButton"> </button>
+    </a>
+    <a href="ThirdPage.html" >
+        <button class = "nextButton">  </button>
     </a>
     
 </html>

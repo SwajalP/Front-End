@@ -78,11 +78,15 @@
             border-radius: 2px;
             border-width: 1.08px;
             transition: background-color .15s, color .15s;
+            position: absolute;
+            bottom: 20px;
         }
 
         .download-button:hover{
             background-color: rgba(6, 95, 212, 85%);
-            color:white
+            color:white;
+            box-shadow: 0px 8px 30px -12px rgb(116, 115, 115);
+            overflow-x: hidden;
         }
 
         
@@ -93,7 +97,7 @@
 <body>
 
     <img class="hayasaka" src="images/hay.jpg" alt="Sorry this images could not be loaded">
-    <a href="https://tinyurl.com/4j7cz2ta">
+    <a target = "_blank" href="https://tinyurl.com/4j7cz2ta">
         <p class="link"> Click here for more Hayaska pictures </p>
     </a>
 
@@ -105,7 +109,7 @@
     
 <a href="SecondPage.html" >
     <button class = "nextPage">  </button>
-</a>
+</a> 
     
     <a href="/images/hay.jpg" download> 
         <button class = "download-button"> Download </button>
